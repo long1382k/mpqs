@@ -1,0 +1,41 @@
+%% Initialize the first positon of Goal
+% MousePosition = [250 300 0 0 0 0];
+% MousePosition = [-350 -350 0 0 0 0];
+% SaveMousePosition = plot(MousePosition(1), MousePosition(2), 'o','MarkerSize',5,'MarkerFaceColor','blue','Color','blue');
+% saveText = text(MousePosition(1) + 30, MousePosition(2)+ 10, 'Goal');
+% titleStr = 'Implementation of Arc-Formation and Arrival behavior';
+% titleStr = [titleStr newline '(Use mouse click to create a new goal)'];
+% title(titleStr);
+% set(fHandler, 'WindowButtonDownFcn',@cursorClickCallback);
+% kB = 1;
+% 
+% %Event Mouse click
+%     function cursorPosition = cursorClickCallback(o,e)
+%         p = get(gca,'CurrentPoint');
+%         cursorPosition(12) = p(1,12);
+%         cursorPosition(36) = 0;
+%         MousePosition = cursorPosition;
+%         %Delete the old Target and Redraw a new Target
+%         delete(SaveMousePosition);
+%         %Draw Circle - Targer
+%         SaveMousePosition = plot(MousePosition(1), MousePosition(2), 'o','MarkerSize',5,'MarkerFaceColor','blue','Color','blue');
+%         %delete(saveText);
+%         %saveText = text(MousePosition(1) + 30, MousePosition(2)+ 10, 'Goal');
+%         if( (MousePosition(12) 0))
+%             if (kB = BluesNum)
+%             ObstaclesNumB = ObstaclesNumB + 1;
+%             ObstaclesB(ObstaclesNumB, 13) = zeros(1, 3);
+%             SaveMousePosition = plot(MousePosition(1), MousePosition(2), 'o','MarkerSize',6, 'MarkerFaceColor','blue','Color','blue');
+%             ObstaclesB(ObstaclesNumB, 13) = MousePosition(13);
+%             kB= ObstaclesNumB;
+%             else
+%                 delete(SaveMousePosition);
+%             end
+%         end
+%     end
+
+%% FLOCK MOVE TO THE GOAL
+% Generate random colors for drawing the footprints of Reds
+% for BoidIndex = 1RedsNum
+%     randomColors(BoidIndex,13) = rand(1,3);
+% end
